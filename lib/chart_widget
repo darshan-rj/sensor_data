@@ -1,0 +1,58 @@
+import 'package:flutter/material.dart';
+import 'package:fl_chart/fl_chart.dart';
+
+class ChartScreen extends StatefulWidget {
+  ChartScreen(value, spots);
+  @override
+  _ChartScreenState createState() => _ChartScreenState();
+}
+
+class _ChartScreenState extends State<ChartScreen> {
+  Map<dynamic, dynamic> _data = {};
+
+  @override
+  void initState() {
+    super.initState();
+    fetchData().then((data) {
+      setState(() {
+        _data = data;
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Chart Example'),
+      ),
+      body: Center(
+        child: _data.isEmpty
+            ? CircularProgressIndicator()
+            : LineChart(
+                LineChartData(
+                  lineBarsData: [
+                    LineChartBarData(
+                      spots: parseData(_data),
+                      isCurved: true,
+                      colors: [Colors.blue],
+                      barWidth: 4,
+                      isStrokeCapRound: true,
+                      belowBarData: BarAreaData(show: false),
+                    ),
+                  ],
+                  minY: 0,
+                  titlesData: FlTitlesData(
+                    leftTitles: SideTitles(showTitles: true),
+                    bottomTitles: SideTitles(showTitles: true),
+                  ),
+                  borderData: FlBorderData(show: true),
+                  gridData: FlGridData(show: true),
+                ),
+              ),
+      ),
+    );
+  }
+}
+
+void main() => runApp(MaterialApp(home: ChartScreen()));

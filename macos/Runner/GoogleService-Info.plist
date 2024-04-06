@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>811146101297-46kjkou319b74d0nblkj9gieon69hk1q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.811146101297-46kjkou319b74d0nblkj9gieon69hk1q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBefoCG23xs9wuHgD1xtayapuPQZJYMeXI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>811146101297</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.sensorDataApp.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>sensordataapp-4df04</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sensordataapp-4df04.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:811146101297:ios:66525a8659d5d9a0754b10</string>
+</dict>
+</plist>
